@@ -45,7 +45,7 @@ app.post("/token", function(req, res) {
 });
 
 
-
+app.use("/", require('./web'));
 
 var port = process.env.PORT || 3000;
 
