@@ -8,4 +8,4 @@ var wineSchema = new Schema({
 	details : String
 });
 
-module.exports = mongoose.model('wine', userSchema);
+module.exports = mongoose.model('wine', wineSchema);

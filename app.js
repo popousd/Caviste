@@ -3,10 +3,12 @@ var path = require('path');
 var bodyParser = require('body-parser');
 var jwt = require("jwt-simple");
 var auth = require("./auth.js")();
-var users = require("./models/users.js");  
-var cfg = require ("./config.js")
-require('./config');
+var users = require("./models/User.js");  
+var cfg = require ("./config.js");
+require('./config/index');
+var mongoose = require('mongoose');
 
+mongoose.Promise = global.Promise;
 
 var app = express();
 
