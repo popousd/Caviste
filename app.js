@@ -7,6 +7,9 @@ var users = require("./models/User.js");
 var cfg = require ("./config.js");
 require('./config/index');
 var mongoose = require('mongoose');
+var localhose = require('localhose');
+
+localhose.set('api.caviste.dev');
 
 mongoose.Promise = global.Promise;
 
